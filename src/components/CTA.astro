@@ -1,0 +1,18 @@
+---
+interface Props {
+  heading: string;
+  text: string;
+  buttonText: string;
+  buttonHref: string;
+}
+
+const { heading, text, buttonText, buttonHref } = Astro.props;
+---
+
+<section class="section">
+  <div class="container cta">
+    <h2>{heading}</h2>
+    <p>{text}</p>
+    <a class="button" href={buttonHref}>{buttonText}</a>
+  </div>
+</section>

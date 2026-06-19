@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const faqs = [
+  {
+    question: "Can I tour before applying?",
+    answer: "Yes. Tours or intro conversations will be available before formal onboarding.",
+  },
+  {
+    question: "How will members book kitchen time?",
+    answer: "Members will book kitchen time through Food Corridor once onboarded.",
+  },
+  {
+    question: "Do I need my own permit?",
+    answer: "Permit requirements depend on your business and products. We’ll help point members toward the right process, but requirements may vary.",
+  },
+  {
+    question: "Will storage be available?",
+    answer: "Storage options are planned, including dry, cold, and freezer storage depending on availability.",
+  },
+];
+---
+
+<BaseLayout title="FAQ | LA Kitchen Collective">
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">FAQ</p>
+      <h1>Common questions</h1>
+
+      <div class="faq-list">
+        {faqs.map((faq) => (
+          <article class="card">
+            <h2>{faq.question}</h2>
+            <p>{faq.answer}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .faq-list {
+    display: grid;
+    gap: 1rem;
+    max-width: 820px;
+  }
+
+  .faq-list h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+    letter-spacing: normal;
+    line-height: 1.2;
+  }
+
+  .faq-list p {
+    margin-bottom: 0;
+  }
+</style>

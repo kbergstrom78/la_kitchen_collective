@@ -1,17 +1,127 @@
 ---
+import "../styles/global.css";
 
+const currentYear = new Date().getFullYear();
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="LA Kitchen Collective is a shared commercial kitchen coming soon to Northern New Mexico."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LA Kitchen Collective</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="hero">
+        <div class="container hero__content">
+          <p class="eyebrow">Coming soon to Northern New Mexico</p>
+
+          <h1>Shared commercial kitchen space for growing food businesses.</h1>
+
+          <p class="lede">
+            LA Kitchen Collective is being developed as a professional kitchen
+            space for bakers, caterers, food trucks, packaged food makers, and
+            small-batch food businesses.
+          </p>
+
+          <a class="button" href="#contact">Join the Interest List</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Who it’s for</p>
+            <h2>For food entrepreneurs who need more than a home kitchen.</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <h3>Bakers</h3>
+              <p>Small-batch baked goods, farmers market products, and wholesale prep.</p>
+            </article>
+
+            <article class="card">
+              <h3>Caterers & Meal Prep</h3>
+              <p>Flexible production space for prep, cooking, packaging, and storage.</p>
+            </article>
+
+            <article class="card">
+              <h3>Food Trucks</h3>
+              <p>Commissary support, prep space, sanitation areas, and storage access.</p>
+            </article>
+
+            <article class="card">
+              <h3>Packaged Food Makers</h3>
+              <p>Sauces, jams, snacks, dry mixes, frozen items, and local retail products.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container narrow">
+          <p class="eyebrow">What to expect</p>
+
+          <h2>Details are still coming together.</h2>
+
+          <p>
+            We’re currently working through planning, design, and permitting.
+            Join the interest list to receive updates as the space, membership
+            options, and opening timeline become available.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Join the interest list.</h2>
+
+            <p>
+              Tell us a little about your food business and we’ll keep you posted
+              as the kitchen moves closer to opening.
+            </p>
+          </div>
+
+          <form class="contact-form" name="interest" method="POST">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              Business name
+              <input type="text" name="business_name" />
+            </label>
+
+            <label>
+              What kind of food business are you building?
+              <textarea name="business_description" rows="5"></textarea>
+            </label>
+
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; {currentYear} LA Kitchen Collective</p>
+      </div>
+    </footer>
+  </body>
 </html>
