@@ -10,24 +10,30 @@ const currentYear = new Date().getFullYear();
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="LA Kitchen Collective is a shared commercial kitchen coming soon to Northern New Mexico."
+      content="The Los Alamos Kitchen Collective is a shared commercial kitchen coming soon to Northern New Mexico."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LA Kitchen Collective</title>
+    <title>The Los Alamos Kitchen Collective</title>
   </head>
 
   <body>
     <main>
       <section class="hero">
         <div class="container hero__content">
+          <img
+            class="hero__logo"
+            src="/logos/original-version-isologotype.png"
+            alt="The Los Alamos Kitchen Collective"
+          />
+
           <p class="eyebrow">Coming soon to Northern New Mexico</p>
 
           <h1>Shared commercial kitchen space for growing food businesses.</h1>
 
           <p class="lede">
-            LA Kitchen Collective is being developed as a professional kitchen
-            space for bakers, caterers, food trucks, packaged food makers, and
-            small-batch food businesses.
+            The Los Alamos Kitchen Collective is being developed as a professional
+            kitchen space for bakers, caterers, food trucks, packaged food makers,
+            and small-batch food businesses.
           </p>
 
           <a class="button" href="#contact">Join the Interest List</a>
@@ -43,31 +49,43 @@ const currentYear = new Date().getFullYear();
 
           <div class="card-grid">
             <article class="card">
+              <img src="/logos/brown-version-isotype.png" alt="" class="card__icon" />
               <h3>Bakers</h3>
-              <p>Small-batch baked goods, farmers market products, and wholesale prep.</p>
+              <p>
+                Small-batch baked goods, farmers market products, and wholesale prep.
+              </p>
             </article>
 
             <article class="card">
+              <img src="/logos/brown-version-isotype.png" alt="" class="card__icon" />
               <h3>Caterers & Meal Prep</h3>
-              <p>Flexible production space for prep, cooking, packaging, and storage.</p>
+              <p>
+                Flexible production space for prep, cooking, packaging, and storage.
+              </p>
             </article>
 
             <article class="card">
+              <img src="/logos/brown-version-isotype.png" alt="" class="card__icon" />
               <h3>Food Trucks</h3>
-              <p>Commissary support, prep space, sanitation areas, and storage access.</p>
+              <p>
+                Commissary support, prep space, sanitation areas, and storage access.
+              </p>
             </article>
 
             <article class="card">
+              <img src="/logos/brown-version-isotype.png" alt="" class="card__icon" />
               <h3>Packaged Food Makers</h3>
-              <p>Sauces, jams, snacks, dry mixes, frozen items, and local retail products.</p>
+              <p>
+                Sauces, jams, snacks, dry mixes, frozen items, and local retail products.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--muted">
+      <section class="section section--brand">
         <div class="container narrow">
-          <p class="eyebrow">What to expect</p>
+          <p class="eyebrow eyebrow--light">What to expect</p>
 
           <h2>Details are still coming together.</h2>
 
@@ -119,8 +137,14 @@ const currentYear = new Date().getFullYear();
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>&copy; {currentYear} LA Kitchen Collective</p>
+      <div class="container site-footer__inner">
+        <img
+          src="/logos/brown-version-logotype.png"
+          alt="The Los Alamos Kitchen Collective"
+          class="footer__logo"
+        />
+
+        <p>&copy; {currentYear}</p>
       </div>
     </footer>
   </body>
