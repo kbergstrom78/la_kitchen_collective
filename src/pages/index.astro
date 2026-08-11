@@ -5,7 +5,7 @@ const currentYear = new Date().getFullYear();
 
 const features = [
   {
-    title: "Licensed kitchen space",
+    title: "Commercial kitchen space",
     body: "Prep, cooking, and packaging space booked in blocks that fit your production schedule instead of a full-time lease.",
     icon: '<path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/>',
   },
@@ -20,8 +20,8 @@ const features = [
     icon: '<path d="M5 6a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><path d="M5 10h14"/><path d="M15 7v6"/>',
   },
   {
-    title: "Business resources",
-    body: "Support for the parts that aren't cooking — licensing, food safety plans, operating procedures, and scaling up without breaking what works.",
+    title: "Business support",
+    body: "Resources to help you navigate licensing, food safety, operations, and growth — so you can spend less time figuring out how to run a food business and more time building one.",
     icon: '<rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/>',
   },
 ];
@@ -30,10 +30,10 @@ const audiences = [
   "Bakers",
   "Caterers",
   "Food trucks & trailers",
-  "Packaged foods",
+  "Packaged food businesses",
   "Meal prep",
   "Pop-ups & supper clubs",
-  "Market vendors",
+  "Farmers market vendors",
 ];
 ---
 
@@ -66,13 +66,12 @@ const audiences = [
             <span>Opening fall 2027</span>
           </div>
 
-          <h1>Licensed kitchen space, rented by the hour.</h1>
+          <h1>A place to cook. A place to grow.</h1>
 
           <p class="hero__lede">
-            The Los Alamos Kitchen Collective is a shared-use commercial kitchen for
-            local food entrepreneurs, caterers, bakers, and small food businesses —
-            flexible access to licensed space, equipment, storage, and business
-            resources, without the cost of building your own facility.
+            The Los Alamos Kitchen Collective gives local food entrepreneurs 
+            access to licensed commercial kitchen space, equipment, storage, 
+            and business resources — without the cost of building a facility of their own.
           </p>
 
           <form
@@ -94,7 +93,7 @@ const audiences = [
               required
               placeholder="you@yourbusiness.com"
             />
-            <button class="btn" type="submit">Keep me posted</button>
+            <button class="btn" type="submit">Join the interest list</button>
           </form>
 
           <p class="hero__note">
@@ -128,22 +127,22 @@ const audiences = [
 
         <div class="prose">
           <p>
-            New Mexico’s Homemade Food Act is a real on-ramp: shelf-stable foods —
-            breads, cookies, granola, dry mixes — can be made in your own kitchen and
-            sold without an Environment Department food permit. Plenty of good
-            businesses start exactly there.
+            New Mexico’s Homemade Food Act gives many food businesses a place to start: 
+            shelf-stable products like breads, cookies, granola, and dry mixes can be 
+            made at home without an Environment Department food permit. But once a business 
+            moves into prepared meals, refrigerated foods, sauces, fillings, or other products 
+            that require temperature control, it needs an appropriately permitted facility.
           </p>
           <p>
-            It stops at temperature control. Prepared meals, dairy-based fillings,
-            cooked vegetables, refrigerated sauces and dips — anything that needs to be
-            held hot or cold for safety — has to be produced in an appropriately
-            permitted facility. Building one yourself means a lease, a hood, floor
-            drains, and an inspection cycle before you sell a single jar.
+            Some businesses start at home. Others start with a food truck, a farmers market booth, 
+            catering gigs, or simply an idea that needs a licensed place to produce. What they 
+            shouldn’t need is the capital to build an entire commercial kitchen before they know the 
+            business works.
           </p>
-          <p class="lead-out">
-            Prove demand at home, then move production here. That step is what the
-            Collective is built for.
+          <p class="lead-out__tagline">
+            Build the business first. Grow from there.
           </p>
+
         </div>
       </section>
 
@@ -151,7 +150,7 @@ const audiences = [
         <div class="wrap">
           <p class="eyebrow">What members get</p>
           <h2 class="section-title" style="margin-bottom: 56px; max-width: 22em">
-            A production kitchen you share instead of finance.
+            Everything you need to produce — without building it yourself.
           </h2>
 
           <div class="features">
@@ -180,7 +179,7 @@ const audiences = [
           </div>
 
           <div class="tags">
-            <span class="tags__label">Built for:</span>
+            <span class="tags__label">Who it's for:</span>
             {audiences.map((audience) => <span class="tag">{audience}</span>)}
           </div>
         </div>
@@ -190,12 +189,12 @@ const audiences = [
         <div class="wrap" style="padding-top: 72px; padding-bottom: 72px">
           <p class="eyebrow">What to expect</p>
           <h2 class="section-title" style="max-width: 20em; margin-bottom: 22px">
-            Details are still coming together.
+            Help shape the Kitchen.
           </h2>
           <p style="font-size: 19px; max-width: 38em">
-            The site is secured and we’re working through design and permitting now.
-            Join the list and we’ll send membership options, rates, and the opening
-            timeline as they’re set.
+            We're designing the Kitchen around the businesses that will use it. 
+            Join the interest list to hear about membership, tour opportunities, and opening plans — 
+            and to weigh in on equipment, access, storage, and other decisions as the space takes shape.
           </p>
         </div>
       </section>
@@ -203,11 +202,11 @@ const audiences = [
       <section id="waitlist" class="band-surface">
         <div class="wrap split">
           <div>
-            <h2 class="section-title" style="margin-bottom: 22px">Get on the list.</h2>
+            <h2 class="section-title" style="margin-bottom: 22px">Help us build it right.</h2>
             <p style="font-size: 19px; color: var(--color-neutral-800); max-width: 26em; margin-bottom: 16px">
-              Tell us what you’re making. You’ll get updates as construction moves
-              along, membership terms and rates as they’re set, and the occasional
-              question about equipment, hours, and how the space should work.
+              Tell us what you're making and what you need from a shared kitchen. 
+              We'll keep you updated on construction, membership, rates, and opening plans — 
+              and ask for your input as decisions about the space are made.
             </p>
             <p style="font-size: 16px; color: var(--color-neutral-700); max-width: 26em">
               The list genuinely shapes how the kitchen gets built. We won’t share your
@@ -240,10 +239,12 @@ const audiences = [
               <label for="w-type">What are you making?</label>
               <select id="w-type" class="input" name="business_type" required>
                 <option value="">Choose one</option>
-                <option>Baked goods</option>
+                <option>Bakery or specialty baked goods</option>
+                <option>Personal chef</option>
                 <option>Catering</option>
                 <option>Food truck or trailer</option>
-                <option>Packaged food or beverage</option>
+                <option>Farmers market or market vendor</option>
+                <option>Packaged food or beverage businesses</option>
                 <option>Meal prep</option>
                 <option>Pop-up or supper club</option>
                 <option>Something else</option>
